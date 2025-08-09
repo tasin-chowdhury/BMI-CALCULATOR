@@ -37,14 +37,15 @@ function App() {
   return (
     <div
       style={{ width: "50%" }}
-      className="container  mx-auto text-center shadow p-2 m-5 bg-body-tertiary rounded"
+      className="position-fixed top-50 start-50 translate-middle container  mx-auto text-center shadow p-2  bg-body-tertiary rounded"
     >
-      <div className="row justify-content-center">
+      <div className="row justify-content-center  ">
         <form className="col-6" onSubmit={calcBmi}>
           <h2 className="text-primary">BMI Calculator</h2>
           <div className="m-1">
-            <label className="form-label">Enter your weight (lbs)</label>
-            <br />
+            <label className="form-label text-start d-block">
+              Enter your weight (lbs)
+            </label>
             <input
               className="form-control"
               type="text"
@@ -54,8 +55,9 @@ function App() {
             />
           </div>
           <div className="m-1">
-            <label className="form-label">Enter your height (in)</label>
-            <br />
+            <label className="form-label text-start d-block">
+              Enter your height (in)
+            </label>
             <input
               className="form-control"
               type="text"
